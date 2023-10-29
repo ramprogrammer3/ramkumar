@@ -6,8 +6,8 @@ import {AiFillDelete} from "react-icons/ai"
 import {BiSolidEditAlt} from "react-icons/bi"
 
 
-const url = REACT_APP_BASE_URL +"/profile/getAllUsers";
-const url1 = REACT_APP_BASE_URL+"/profile/delete/"
+const url = "https://ramkumar-crud-profile.onrender.com/api/v1/profile/getAllUsers";
+const url1 = "https://ramkumar-crud-profile.onrender.com/api/v1/profile/delete/"
 
 const Home = () => {
     const [userData,setUserData] = useState([]);

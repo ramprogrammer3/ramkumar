@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
-const url = REACT_APP_BASE_URL+"/profile/getOne/";
-const url1 = REACT_APP_BASE_URL+"/profile/update/"
+const url ="https://ramkumar-crud-profile.onrender.com/api/v1/profile/getOne/";
+const url1 = "https://ramkumar-crud-profile.onrender.com/api/v1/profile/update/"
 
 const EditProfile = () => {
   const location = useLocation();

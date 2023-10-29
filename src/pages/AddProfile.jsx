@@ -2,7 +2,7 @@ import {useNavigate} from "react-router-dom"
 import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-const url =  REACT_APP_BASE_URL+"profile/create"
+const url = "https://ramkumar-crud-profile.onrender.com/api/v1profile/create"
 
 const AddProfile = () => {
   const [name, setName] = useState("");
