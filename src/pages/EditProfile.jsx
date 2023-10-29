@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
-const url = "http://localhost:8080/api/v1/profile/getOne/";
+const url = REACT_APP_BASE_URL+"/profile/getOne/";
+const url1 = REACT_APP_BASE_URL+"/profile/update/"
 
 const EditProfile = () => {
   const location = useLocation();
@@ -59,7 +60,7 @@ const EditProfile = () => {
   const updateUser = async(id,data)=>{
     const toastId = toast.loading("Updating...")
     try {
-      const response = await axios.put(`http://localhost:8080/api/v1/profile/update/${id}`,data);
+      const response = await axios.put(`${url1}${id}`,data);
       if(!response.data.success){
         toast.error(response.data.message)
       }
