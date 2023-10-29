@@ -27,6 +27,13 @@ app.use("/api/v1",profileRoute);
 // db connection
 connectDB();
 
+app.get("/",(req,res)=>{
+    res.send({
+        success :true,
+        message : "Upload successfull"
+    })
+})
+
 
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`);
