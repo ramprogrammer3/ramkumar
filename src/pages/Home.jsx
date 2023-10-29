@@ -48,7 +48,7 @@ const Home = () => {
 
 
     if(loading){
-      return <div> loading ...</div>
+      return <div className="flex w-screen h-screen justify-center items-center"> <div class="custom-loader"></div></div>;
     }
 
   return (
